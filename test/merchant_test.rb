@@ -1,5 +1,4 @@
 require_relative './test_helper'
-require_relative '../lib/merchant'
 
 class MerchantTest < Minitest::Test
   def test_it_exists
@@ -13,7 +12,7 @@ class MerchantTest < Minitest::Test
 
     assert_equal 5, merchant.id
     assert_equal "Turing School", merchant.name
-    assert_equal Time.parse("2016-01-11 12:29:33 UTC"), merchant.created_at
+    assert_equal Time.parse("2016-01-11 12:29:33 UTC"), merchant.time
   end
 
 
